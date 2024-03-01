@@ -7,9 +7,3 @@ class Solution:
 			if (i < len(word2)):
 				result.append(word2[i])
 		return ''.join(result)
-
-
-S = Solution()
-
-string = S.mergeAlternately("hello", "abcdf")
-print(string)

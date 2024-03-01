@@ -10,7 +10,7 @@ int removeElement(int* nums, int numsSize, int val)
 	int	size = 0;
 	for (int i = 0; i < numsSize; i++)
 	{
-		if (nums[i] != -1)
+			if (nums[i] != -1)
 			nums[size++] = nums[i];
 	}
 	return (size);

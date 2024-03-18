@@ -14,6 +14,10 @@ class Solution:
 				arrows += 1
 				end = end_of_ballon
 		return (arrows)
+
+
+
+
 """Here sorting by the end point is the done to ensure that we do not count
 overlap more than one time. So we are gonna save the current end value of our
 sorted list, and than we are looking if the start of the current interval is

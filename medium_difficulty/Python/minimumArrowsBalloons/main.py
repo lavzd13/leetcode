@@ -14,3 +14,11 @@ class Solution:
 				arrows += 1
 				end = end_of_ballon
 		return (arrows)
+"""Here sorting by the end point is the done to ensure that we do not count
+overlap more than one time. So we are gonna save the current end value of our
+sorted list, and than we are looking if the start of the current interval is
+greater than the end of the saved interval if it is. That means that we do not
+have overlap so we would need to shoot arrow after shooting arrow we then save
+the end of last interval than we compare further. If start is less than the end
+that means that that start is in the previous interval so that means that we
+have overlap and we do not need to shoot arrow."""

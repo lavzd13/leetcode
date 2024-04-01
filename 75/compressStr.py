@@ -16,8 +16,10 @@ class Solution:
 				write_idx += len(count)
 			i = j
 		del chars[write_idx:]
-		print(chars)
 		return len(chars)
+
+
+#the code that I would say is enough but this guys escalated that too much
 		""" dict = {}
 		for char in chars:
 			if char in dict:
@@ -29,10 +31,6 @@ class Solution:
 				chars += key
 				if value > 1:
 					chars += str(value) """
-
-chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
-sol = Solution()
-print(sol.compress(chars))
 
 """Idk who made this task in leetcode but he is real fucking dickhead for this
 first of all his representing of occurences does not have sense, second of all fuck him!

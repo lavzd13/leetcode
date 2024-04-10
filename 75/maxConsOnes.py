@@ -14,6 +14,25 @@ class Solution:
 			end+=1
 		return end - start
 
+class Solution:
+	def longestSubarray(self, nums: List[int]) -> int:
+		start = 0
+		end = 0
+		k = 1
+		while end < len(nums):
+			if nums[end] == 0:
+				k-=1
+			if k < 0:
+				if nums[start] == 0:
+					k+=1
+				start+=1
+			end+=1
+		return end - start - 1
+
+
+arr = [1,1,0,1]
+sol = Solution()
+print(sol.longestSubarray(arr))
 """I did not have any idead how to solve this so I looked it up
 and I found this one. This is the first time that I was doing the
 dynamic sliding window. This solution is pretty simple. We are
